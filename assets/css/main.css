@@ -1,0 +1,114 @@
+.process {
+max-width: 69em;
+list-style: none;
+margin: 0px auto;
+padding: 0;
+}
+.process li {
+display: block;
+/* float: left;*/
+padding: 1px;
+width: 100%;
+opacity: 0;
+}
+.process li.shown, .no-js .process li, .no-cssanimations .process li {
+opacity: 1;
+}
+.process li a, .process li img {
+outline: 0;
+border: 0;
+display: block;
+max-width: 100%}
+.process.effect-2 li.animate {
+-webkit-transform: translateY(200px);
+-moz-transform: translateY(200px);
+transform: translateY(200px);
+-webkit-animation: moveUp .65s ease forwards;
+-moz-animation: moveUp .65s ease forwards;
+animation: moveUp .65s ease forwards;
+}
+@-webkit-keyframes moveUp {
+to {
+-webkit-transform: translateY(0);
+opacity: 1;
+}
+}@-moz-keyframes moveUp {
+to {
+-moz-transform: translateY(0);
+opacity: 1;
+}
+}@keyframes moveUp {
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}#chartwrap {
+width: 100%}
+#chartwrap .container {
+margin-left: 0;
+padding-left: 0;
+}
+#chartwrap h1, #chartwrap p {
+margin-left: 10px;
+}
+.cardinfo {
+background: #fff;
+padding: 15px;
+margin: 2px;
+text-align: left;
+}
+.cardinfo i {
+font-size: 18px;
+padding-right: 20px;
+}
+.grid {
+max-width: 69em;
+list-style: none;
+margin: 30px auto;
+padding: 0;
+}
+.grid li {
+display: block;
+float: left;
+padding: 7px;
+width: 33%;
+opacity: 0;
+}
+.grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
+opacity: 1;
+}
+.grid li a, .grid li img {
+outline: 0;
+border: 0;
+display: block;
+max-width: 100%}
+.grid img {
+opacity: .7;
+}
+.grid img:hover {
+opacity: 1;
+}
+.grid.effect-2 li.animate {
+-webkit-transform: translateY(200px);
+-moz-transform: translateY(200px);
+transform: translateY(200px);
+-webkit-animation: moveUp .65s ease forwards;
+-moz-animation: moveUp .65s ease forwards;
+animation: moveUp .65s ease forwards;
+}
+@-webkit-keyframes moveUp {
+to {
+-webkit-transform: translateY(0);
+opacity: 1;
+}
+}@-moz-keyframes moveUp {
+to {
+-moz-transform: translateY(0);
+opacity: 1;
+}
+}@keyframes moveUp {
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
