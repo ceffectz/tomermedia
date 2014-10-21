@@ -23,11 +23,11 @@ show_error("Invalid e-mail address");
 }
 /* Let's prepare the message for the e-mail */
 
-$subject = "Someone has sent you a message";
+$subject = "You recived a new message from contact us";
 
 $message = "
 
-Someone has sent you a message using your contact form:
+You recived a new message from contact us:
 
 Name: $name
 

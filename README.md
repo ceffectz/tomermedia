@@ -4,6 +4,19 @@ TomerMedia
 HTML5/CSS3 Mobile Responsive Website
 
 
+Email Setting Instructions
+==========================
+
+- Set e-mail recipient
+
+$myemail = "name@domain.com";
+
+
+- Redirect visitor to the thank you page
+
+header('Location: http://www.example.com/contact.html');
+
+
 Changelog
 ==========
 
