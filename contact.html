@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Tomer Media</title>
+    <title>Contact Us - TomerMedia</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
@@ -120,7 +120,7 @@
                                         <ul class="process effect-2" id="process">
                                             <li>
                                                 <p class="contact-img-location-1 "><span class="span-font-size">Address</span> 
-                                                    <br> <span class="span-font-size1">Lorem Ipsum is simply dummy</span>
+                                                    <br> <span class="span-font-size1">Aba Even 18, Herzliya, Israel</span>
                                                 </p>
                                             </li>
                                         </ul>
@@ -179,7 +179,7 @@
             <div class="col-md-12 ">
                 <h3>YOUR BUSINESS SUCCESS </h3>
                 <h2>IS JUST THE CLICK OF A BUTTON AWAY</h2>
-                <form id="signupForm" method="post" class="form-horizontal" action="target.php">
+                <form id="signupForm" method="post" class="form-horizontal" action="mailer.php">
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="form-group">
@@ -206,12 +206,31 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-6 ">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="subject" name="subject" placeholder=" *SUBJECT">
                             </div>
+                        </div>-->
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                <select class="form-control" id="subject" name="subject">
+                                    <option value="">*SUBJECT</option>
+                                    <option value="action">LEAD GENERATION</option>
+                                    <option value="comedy">COPYWRITING</option>
+                                    <option value="horror">WEB DESIGN</option>
+                                    <option value="romance">EMAIL MARKETING & LIST MANAGEMENT</option>
+                                    <option value="action">TRAFFIC GENERATION</option>
+                                    <option value="comedy">WEBSITE CONVERSION TWEAK & SPLIT TEST</option>
+                                    <option value="horror">CONSULTING</option>
+                                    <option value="romance">VIDEO PRODUCTION</option>
+                                    <option value="romance">DONE-FOR-YOU MARKETING</option>
+
+                                </select>
+                            </div>
                         </div>
+
                         <div class="col-md-6 ">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="PHONE">
@@ -239,7 +258,7 @@
             <div id="footer">
                 <div class="row">
 
-                    <p class="footer-p-style">© 2014 TomerMedia. All rights reserved. Designed by <a href="www.ceffectz.com">ceffectz.</a>
+                    <p class="footer-p-style">© 2014 TomerMedia. All rights reserved. Designed by <a href="http://www.ceffectz.com" target="_blank">ceffectz.</a>
                     </p>
 
                 </div>
@@ -284,14 +303,14 @@
                     subject: {
                         validators: {
                             notEmpty: {
-                                message: 'The full name is required and cannot be empty'
+                                message: 'Select subject and cannot be empty'
                             }
                         }
                     },
                     message1: {
                         validators: {
                             notEmpty: {
-                                message: 'The full name is required and cannot be empty'
+                                message: 'The message is required and cannot be empty'
                             }
                         }
                     },

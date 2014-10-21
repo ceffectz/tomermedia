@@ -1,6 +1,6 @@
 /**
 * @author  ceffectz
-* @version 1.1
+* @version 1.2
 * @website www.ceffectz.com
 */
 
@@ -229,13 +229,14 @@
     }
     .navbar-toggle {
         margin-right: 0px !important;
+        padding-right: 10px !important;
     }
     .navbar-brand {
         padding-right: 0px !important;
         padding-left: 0px !important;
     }
     .cusiframe {
-        width: 50% !important;
+        width: 100% !important;
     }
 }
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
@@ -1478,17 +1479,18 @@ fieldset[disabled] .btn-sample3.active {
 .shown {
     height: 200px;
 }
+.form-control {
+    border: 1px solid #d1d1d1 !important;
+}
+.form-horizontal .has-feedback .form-control-feedback {
+    padding-right: 15px;
+}
 .video-holder {
     position: relative;
     height: 339px;
-    /* max-width: 512px;
-margin: 69px auto 20px auto;*/
-    /* background: url(../img/play.png) no-repeat center #cccccc; }*/
     @media (max-width: 766px) {
         .video-holder {
             margin: 30px auto 10px auto;
         }
     }
-    .cusiframe {
-        width: 50% !important;
-    }
+}
