@@ -1,6 +1,6 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "episode27@gmail.com";
+$myemail = "ceo@tomermedia.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['name'], "Your Name");
@@ -55,7 +55,7 @@ $message
 mail($myemail,$subject,$message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://ceffectz.github.io/tomermedia/contact.html');
+header('Location: http://cztsgl.ceffectz.asia/tomermedia/contact.html');
 exit();
 
 /* Functions we used */
