@@ -1,10 +1,15 @@
 /**
 * @author  ceffectz
-* @version 1.2
+* @version 1.3
 * @website www.ceffectz.com
 */
 
-@media(min-width:1199px)  {}@media(max-width:1199px) {
+@media(min-width:1199px) {
+    .h2heading-padding {
+        padding-top: 70px !important;
+    }
+}
+@media(max-width:1199px) {
     .section02-cus-p {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -157,6 +162,9 @@
     .cusiframe {
         width: 70% !important;
     }
+    .h2heading-padding {
+        padding-top: 0px !important;
+    }
 }
 @media(max-width:766px) {
     .s-Section02 {
@@ -177,6 +185,10 @@
         font-size: 32px !important;
         padding-top: 50px !important;
     }
+    .h2heading-padding {
+        padding-top: 70px !important;
+    }
+}
 }
 @media(max-width:990px) {
     .footer-image {
@@ -738,7 +750,7 @@ a:active {
     padding-bottom: 13px;
     border-bottom: 1px solid #f0f0f0;
     background-color: #30424e;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .s-Section02 h2 {
     font-size: 28px;
@@ -1133,7 +1145,7 @@ border-color: #49a2e6!important;*/
     padding-bottom: 13px;
     border-bottom: 1px solid #f0f0f0;
     background-color: #30424e;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .c-Section02 h2 {
     font-size: 28px;
@@ -1485,12 +1497,20 @@ fieldset[disabled] .btn-sample3.active {
 .form-horizontal .has-feedback .form-control-feedback {
     padding-right: 15px;
 }
+.h2heading-padding {
+    padding-top: 70px;
+}
 .video-holder {
     position: relative;
     height: 339px;
+    /* max-width: 512px;
+margin: 69px auto 20px auto;*/
+    /* background: url(../img/play.png) no-repeat center #cccccc; }*/
     @media (max-width: 766px) {
         .video-holder {
             margin: 30px auto 10px auto;
         }
     }
-}
+    .cusiframe {
+        width: 50% !important;
+    }

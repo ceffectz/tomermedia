@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>TomerMedia</title>
+    <title>Tomer Media</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Fonts -->
@@ -73,13 +73,34 @@
 
                 </div>
 
+
                 <p class="intro-textcus">A <span class="cus-color-txt">MARKET-LEADING</span> APPROACH TO</p>
                 <p class="intro-text1">BUSINESS GROWTH.</p>
                 <div class="video-holder">
 
 
 
-                    <iframe id="ytplayer" class="cusiframe" type="text/html" width="570" height="320" src="https://www.youtube.com/embed/181EAwlvvFw?autoplay=1&loop=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+                        <img style="cursor: pointer;display: inline-block;" src="img/video-player.jpg" class="img-responsive" width="570" height="321" alt="" />
+                    </div>
+                    <div id="thevideo" style="display: none;">
+
+                        <object width="570" height="321">
+                            <param name="movie" value="//www.youtube.com/v/181EAwlvvFw?version=3&amp;hl=en_US&amp;autoplay=1&rel=0&showinfo=0" allowFullScreen="true" allowscriptaccess="always" allowfullscreen="true"></param>
+                            <param name="allowFullScreen" value="true"></param>
+                            <param name="allowscriptaccess" value="always"></param>
+                            <embed src="//www.youtube.com/v/181EAwlvvFw?version=3&amp;hl=en_US&amp;autoplay=1&rel=0&showinfo=0" allowFullScreen="true" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" width="570" height="321"></embed>
+                        </object>
+
+                    </div>
+
+
+
+                    <!--2222-->
+
+                    <!--<iframe id="ytplayer" class="cusiframe"  type="text/html" width="570" height="320"
+src="https://www.youtube.com/embed/181EAwlvvFw?autoplay=1&loop=1&rel=0&showinfo=0"
+frameborder="0" allowfullscreen></iframe>-->
 
 
                     <!--<iframe id="ytplayer" class="cusiframe" type="text/html" width="640" height="320" src="https://www.youtube.com/embed/XQu8TTBmGhA?autoplay=1&loop=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>-->
@@ -281,7 +302,7 @@
                         <p>We understand that in order for true ROI to be attained, all facets of a business’ marketing must work together as one.</p>
                         <br>
                         <br>
-                        <p><a href="contact.html" class="btn btn-default btn-lg button float btn-sample1" type="button">GET STARTED NOW</a>
+                        <p><a href="contact.html#contactf" class="btn btn-default btn-lg button float btn-sample1" type="button">GET STARTED NOW</a>
                         </p>
                     </div>
                 </div>
@@ -405,7 +426,7 @@
                     </div>
                     <br>
                     <br>
-                    <p><a href="contact.html" class="btn btn-default btn-lg button float btn-sample2" type="button">GET STARTED NOW</a>
+                    <p><a href="contact.html#contactf" class="btn btn-default btn-lg button float btn-sample2" type="button">GET STARTED NOW</a>
                     </p>
 
                 </div>
@@ -427,7 +448,9 @@
                         <br>
                         <br>
                         <p>
-                            <a href="contact.html" <button type="submit" class="btn btn-primary btn-lg btndisabled btn-sample button float">TALK TO US TODAY</button></a>
+                            <a href="contact.html#contactf" <button type="submit" class="btn btn-primary btn-lg btndisabled btn-sample button float">TALK TO US TODAY</button></a>
+
+                            <!-- <a href="mypets.html#myfish">Read About My Fish</a>-->
                         </p>
 
                     </div>

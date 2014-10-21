@@ -7,6 +7,15 @@ HTML5/CSS3 Mobile Responsive Website
 Changelog
 ==========
 
+**Version 2**
+
+- Adding Anchor link to focus the form field when user clicks Get Stated now button.
+- Cording the Contact Us form in php and activate the send-mailer recipient send to this email address. 
+- Adding Custom Image on top of the youtube video.
+- Bug Fixed: Scroll down and click the menu it scroll half of the page
+- Mobile responsive checking + Fixes
+
+
 **Version 1**
 
 - Adding CSS3 Animations
