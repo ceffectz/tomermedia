@@ -1519,7 +1519,9 @@ margin: 69px auto 20px auto;*/
 }
 @media (max-width: 475px) {
     #player {
-        display: none;
+        width: 320px;
+        height: 180px;
+        margin: 0 auto;
     }
 }
 @media (max-width: 6000px) {
@@ -1527,10 +1529,8 @@ margin: 69px auto 20px auto;*/
         display: none;
     }
 }
-@media (max-width: 475px) {
-    #mplayer {
-        width: 320px;
-        height: 180px;
-        margin: 0 auto;
+@media (max-width: 6000px) {
+    #imgdisable {
+        display: none;
     }
 }
