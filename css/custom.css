@@ -1511,6 +1511,9 @@ margin: 69px auto 20px auto;*/
             margin: 30px auto 10px auto;
         }
     }
-    .cusiframe {
-        width: 50% !important;
-    }
+}
+#player {
+    width: 570px;
+    min-height: 320px;
+    margin: 0 auto;
+}
