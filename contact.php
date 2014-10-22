@@ -1,3 +1,20 @@
+<?php 
+
+$nsubject = array(
+    '*SUBJECT',
+    'LEAD GENERATION',
+    'COPYWRITING',
+    'WEB DESIGN',
+    'EMAIL MARKETING & LIST MANAGEMENT',
+    'TRAFFIC GENERATION',
+    'WEBSITE CONVERSION TWEAK & SPLIT TEST',
+    'CONSULTING',
+    'VIDEO PRODUCTION',
+    'DONE-FOR-YOU MARKETING'
+)
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Thank You - TomerMedia</title>
+    <title>Contact - TomerMedia</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
@@ -176,7 +193,7 @@
     </div>
 
     <div class="c-section03">
-        <section id="" class="container content-section text-center">
+        <section id="contactf" class="container content-section text-center">
             <div class="col-md-12 ">
                 <h3>YOUR BUSINESS SUCCESS </h3>
                 <h2>IS JUST THE CLICK OF A BUTTON AWAY</h2>
@@ -189,7 +206,7 @@
                         </div>
                         <div class="col-md-6 ">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="YOUR COMPANY">
+                                <input type="text" class="form-control" placeholder="YOUR COMPANY" id="company" name="company">
                             </div>
                         </div>
                     </div>
@@ -202,7 +219,7 @@
                         </div>
                         <div class="col-md-6 ">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="SKYPE">
+                                <input type="text" class="form-control" placeholder="SKYPE" name="skype" id="skype">
                             </div>
                         </div>
                     </div>
@@ -216,25 +233,17 @@
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="form-group">
-                                <select class="form-control" id="subject" name="subject">
-                                    <option value="">*SUBJECT</option>
-                                    <option value="1">LEAD GENERATION</option>
-                                    <option value="2">COPYWRITING</option>
-                                    <option value="3">WEB DESIGN</option>
-                                    <option value="4">EMAIL MARKETING & LIST MANAGEMENT</option>
-                                    <option value="5">TRAFFIC GENERATION</option>
-                                    <option value="6">WEBSITE CONVERSION TWEAK & SPLIT TEST</option>
-                                    <option value="7">CONSULTING</option>
-                                    <option value="8">VIDEO PRODUCTION</option>
-                                    <option value="9">DONE-FOR-YOU MARKETING</option>
-
-                                </select>
+                               <select class="form-control" id="nsubject" name="nsubject">
+<?php foreach($nsubject as $key=>$value){ ?>
+    <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+<?php } ?>
+ </select>
                             </div>
                         </div>
 
                         <div class="col-md-6 ">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="PHONE">
+                                <input type="text" class="form-control" placeholder="PHONE" name="phone" id="phone">
                             </div>
                         </div>
                     </div>
@@ -244,6 +253,30 @@
                             <div class="form-group ">
                                 <textarea name="message1" id="message1" id="message" class="form-control cus-txt-area" rows="3" placeholder="*MESSAGE"></textarea>
                             </div>
+
+
+ <div class="row">
+         <div class="col-md-12 ">
+
+        <div class="form-group">
+        <label class="col-lg-2 control-label captchacus" id="captchaOperation" ></label>
+        <div class="col-lg-2">
+            <input type="text" class="form-control" name="captcha" placeholder="Answer" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-lg-6">
+          <!--  <button type="submit" class="btn btn-default">Validate</button>-->
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
                             <div class="form-group c-cus-btn-left">
                                 <!--<button type="submit" class="btn btn-success c-cus-btn">SEND</button>-->
                                 <button type="submit" class="btn btn-primary btn-lg ">SEND</button>
@@ -283,6 +316,54 @@
             </div>
         </div>
     </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+
+    function generateCaptcha() {
+        $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+    };
+
+    generateCaptcha();
+
+    $('#signupForm')
+        .bootstrapValidator({
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                captcha: {
+                    validators: {
+                        callback: {
+                            message: 'Wrong answer',
+                            callback: function (value, validator, $field) {
+                                // Determine the numbers which are generated in captchaOperation
+                                var items = $('#captchaOperation').html().split(' '),
+                                    sum   = parseInt(items[0]) + parseInt(items[2]);
+                                return value == sum;
+                            }
+                        }
+                    }
+                }
+            }
+        })
+        .on('error.form.bv', function (e) {
+            generateCaptcha();
+        });
+});
+
+</script>
+
+
+
+
+
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('#signupForm').bootstrapValidator({

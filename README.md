@@ -20,6 +20,14 @@ header('Location: http://www.example.com/contact.html');
 Changelog
 ==========
 
+**Version 3**
+
+- Bug Fixing: Cording the Contact Us form in php and activate the send-mailer recipient send to email address.
+- Bug Fixing: Contact Us Thanks you message.
+- Youtube Video Issue fixing
+- Set the Captcha to the contact us form. 
+
+
 **Version 2**
 
 - Adding Anchor link to focus the form field when user clicks Get Stated now button.
