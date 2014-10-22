@@ -1512,14 +1512,16 @@ margin: 69px auto 20px auto;*/
         }
     }
 }
+
 #player {
+    width: auto;
     min-width: 570px;
+    height: auto
     margin: 0 auto;
 }
+
 @media (max-width: 475px) {
     #player {
-        min-width: 100%;
-        margin: 0 auto;
+        display: none;
     }
-    
 }
