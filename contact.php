@@ -13,6 +13,7 @@ $nsubject = array(
     'DONE-FOR-YOU MARKETING'
 )
 
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,7 @@ $nsubject = array(
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Contact - TomerMedia</title>
+    <title>Contact Us - TomerMedia</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 

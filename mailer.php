@@ -60,7 +60,7 @@ Message: $message
 /*mail($name, $myemail, $subject, $message);*/
 
 
-mail($myemail,$subject,$message,'Header','parameters');
+mail($myemail,$subject,$message);
 
 /* Redirect visitor to the thank you page */
 header('Location: http://cztsgl.ceffectz.asia/tomermedia/contact.html');
