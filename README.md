@@ -22,7 +22,7 @@ header('Location: http://www.example.com/contact.html');
 
 
 
-TomerMedia favicon
+Setting up favicon
 ==================
 
 Add the below code to all the pages after the **title** Tag. 
