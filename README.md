@@ -28,9 +28,7 @@ TomerMedia favicon
 Add the below code to all the pages after the **title** Tag. 
 
 ```
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon16x16.png">
-<link rel="icon" type="image/png" sizes="32x32 64x64" href="img/favicon/favicon64x64.png">
-<link rel="icon" type="image/svg+xml" sizes="any" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="128x128" href="img/favicon/favicon128x128.ico">
 ```
 
 
