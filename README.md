@@ -25,7 +25,7 @@ header('Location: http://www.example.com/contact.html');
 TomerMedia favicon
 ==================
 
-Add the below code to all the pages after the <title> Tag. 
+Add the below code to all the pages after the **title** Tag. 
 
 ```
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon16x16.png">
